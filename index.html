@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+	<title>Roofers</title>
+</head>
+<body>
+
+	<svg style="display: none;">
+		<symbol viewBox="0 0 81 80" id="service">
+			<path d="M63.8346 53.333H73.8346L40.5013 23.333L7.16797 53.333H17.168L40.5013 32.2997L63.8346 53.333ZM23.8346 29.3663V23.333H13.8346V38.333L23.8346 29.3663Z"/>
+		</symbol>
+		<symbol viewBox="0 0 81 80" id="service-2">
+			<path d="M20.4987 53.3337C18.31 53.3337 16.1427 52.9026 14.1206 52.065C12.0985 51.2274 10.2612 49.9997 8.71358 48.4521C5.58798 45.3265 3.83203 41.0873 3.83203 36.667C3.83203 32.2467 5.58798 28.0075 8.71358 24.8819C11.8392 21.7563 16.0784 20.0003 20.4987 20.0003C23.832 12.167 31.4987 6.66699 40.4987 6.66699C51.932 6.66699 61.2987 15.5337 62.1654 26.767L63.832 26.667C67.3683 26.667 70.7596 28.0717 73.2601 30.5722C75.7606 33.0727 77.1654 36.4641 77.1654 40.0003C77.1654 43.5365 75.7606 46.9279 73.2601 49.4284C70.7596 51.9289 67.3683 53.3337 63.832 53.3337H60.4987C59.6146 53.3337 58.7668 52.9825 58.1417 52.3573C57.5166 51.7322 57.1654 50.8844 57.1654 50.0003C57.1654 49.1163 57.5166 48.2684 58.1417 47.6433C58.7668 47.0182 59.6146 46.667 60.4987 46.667H63.832C65.6001 46.667 67.2958 45.9646 68.5461 44.7144C69.7963 43.4641 70.4987 41.7684 70.4987 40.0003C70.4987 38.2322 69.7963 36.5365 68.5461 35.2863C67.2958 34.036 65.6001 33.3337 63.832 33.3337H57.1654V30.0003C57.1654 25.58 55.4094 21.3408 52.2838 18.2152C49.1582 15.0896 44.919 13.3337 40.4987 13.3337C32.1654 13.3337 25.332 19.4003 24.032 27.3003C22.932 26.9003 21.732 26.667 20.4987 26.667C17.8465 26.667 15.303 27.7206 13.4276 29.5959C11.5523 31.4713 10.4987 34.0148 10.4987 36.667C10.4987 39.3192 11.5523 41.8627 13.4276 43.7381C15.303 45.6134 17.8465 46.667 20.4987 46.667H23.832C24.7161 46.667 25.5639 47.0182 26.1891 47.6433C26.8142 48.2684 27.1654 49.1163 27.1654 50.0003C27.1654 50.8844 26.8142 51.7322 26.1891 52.3573C25.5639 52.9825 24.7161 53.3337 23.832 53.3337H20.4987ZM40.4987 36.667H50.4987L43.832 50.0003H50.4987L37.9987 73.3337L40.4987 56.667H32.1654L40.4987 36.667Z"/>
+		</symbol>
+		<symbol viewBox="0 0 81 80" id="service-3">
+			<path d="M7.16797 65.4329L45.268 27.3329L42.9013 24.9995L47.6346 20.2329L40.5013 12.9662C44.5013 8.99954 50.8013 8.99954 54.7346 12.9662L66.7346 24.9995L62.0013 29.6995H71.468L73.8346 32.0662L62.0013 44.0329L59.6346 41.6662V32.0662L54.7346 36.7995L52.368 34.4329L14.268 72.5329L7.16797 65.4329Z"/>
+		</symbol>
+		<symbol viewBox="0 0 81 80" id="service-4">
+			<path d="M12.332 63.633L17.032 68.333L23.032 62.3663L18.2987 57.633M40.4987 19.9997C29.4654 19.9997 20.4987 28.9663 20.4987 39.9997C20.4987 51.033 29.4654 59.9997 40.4987 59.9997C51.532 59.9997 60.4987 51.033 60.4987 39.9997C60.4987 28.933 51.532 19.9997 40.4987 19.9997ZM67.1654 43.333H77.1654V36.6663H67.1654M57.9654 62.3663L63.9654 68.333L68.6654 63.633L62.6987 57.633M68.6654 16.6663L63.9654 11.9997L57.9654 17.9663L62.6987 22.6997M43.832 3.33301H37.1654V13.333H43.832M23.032 17.9663L17.032 11.9997L12.332 16.6663L18.2987 22.6997L23.032 17.9663ZM3.83203 43.333H13.832V36.6663H3.83203M43.832 66.6663H37.1654V76.6663H43.832"/>
+		</symbol>
+	</svg>
+
+	<header class="header">
+		<div class="container">
+			<nav class="navbar">
+				<a href="#" class="logo">
+					<img src="images/Roofers.svg" width="157" height="33" alt="Roofers">
+				</a>
+				<div class="hamburger toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
+				<ul class="navbar-list">
+					<li class="navbar-item"><a href="#" class="navbar-link">home</a></li>
+					<li class="navbar-item"><a href="#" class="navbar-link">about</a></li>
+					<li class="navbar-item"><a href="#" class="navbar-link">news</a></li>
+					<li class="navbar-item"><a href="#" class="navbar-link">contact</a></li>
+					<li class="navbar-item"><a href="#" class="navbar-link">services</a></li>
+					<li class="navbar-item"><a href="#" class="navbar-link">projects</a></li>
+				</ul>
+				<ul class="header__contact">
+					<li class="header__item">
+						<a class="header__tel" href="tel:+4873849452">(+487) 384 9452</a>
+					</li>
+					<li class="header__item">
+						<button class="btn" type="button">Get in touch</button>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		
+		<section class="intro">
+			<div class="container">
+				<div class="intro__wrapper">
+					<div class="intro__content">
+						<div class="intro__subtitle">QUALITY ROOFING SOLUTIONS</div>
+						<h1 class="intro__title">Expert roofers at your command</h1>
+						<p class="intro__text">Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam vestibulum. Elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverra est.</p>
+						<ul class="intro__list">
+							<li class="intro__item">Fully legal licensed and insured</li>
+							<li class="intro__item">100% trustworthy company</li>
+							<li class="intro__item">Most Genuine and transparent</li>
+						</ul>
+					</div>
+					<div class="intro__form">
+						<form action="/" class="form" enctype="multipart/form-data">
+							<h2 class="form__title">Get started</h2>
+							<label class="form__label">
+								<span class="form__descr">First name</span>
+								<input type="text" name="Имя" data-validate-field="name" placeholder="" class="form__input input-name">
+							</label>
+							<label class="form__label">
+								<span class="form__descr">Last name</span>
+								<input type="text" name="Имя" data-validate-field="name" placeholder="" class="form__input input-name">
+							</label>
+							<label class="form__label">
+								<span class="form__descr">Email</span>
+								<input type="email" name="Email" data-validate-field="name" placeholder="" class="form__input input-mail">
+							</label>
+							<label class="form__label">
+								<span class="form__descr">Phone</span>
+								<input type="tel" name="Телефон" data-validate-field="tel" placeholder="" class="form__input input-tel">
+							</label>
+							<label class="form__label">
+								<span class="form__descr">Message</span>
+								<textarea class="form__textarea" placeholder=""></textarea>
+							</label>
+							<button class="form__btn" type="submit">Let’s get started</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="partners">
+			<div class="container">
+				<h2 class="partners__title"></h2>
+				<ul class="partners__list">
+					<li class="partners__item">
+						<a href="#" class="partners__link">
+							<img class="partners__img" src="images/core-construction.png" width="145" height="104" alt="core-construction">
+						</a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link">
+							<img class="partners__img" src="images/cover-up.png" width="145" height="104" alt="cover-up">
+						</a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link">
+							<img class="partners__img" src="images/goaction.png" width="145" height="104" alt="goaction">
+						</a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link">
+							<img class="partners__img" src="images/creepy-made.png" width="145" height="104" alt="core-construction">
+						</a>
+					</li>
+					<li class="partners__item">
+						<a href="#" class="partners__link">
+							<img class="partners__img" src="images/block-construction.png" width="145" height="104" alt="block construction">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="reviews">
+			<div class="container">
+				<div class="section__header">
+					<div class="section__subtitle section__subtitle-fill">Homeowners reviews</div>
+					<h2 class="section__title section__title-fill">Our happy customers</h2>
+				</div>
+				<ul class="reviews__wrapper">
+					<li class="reviews__item">
+						<blockquote class="reviews__content">
+							<p class="reviews__text">“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+							<div class="reviews__author">
+								<img class="reviews__img" src="images/user.png" width="49" height="49" alt="Kelly Genuine">
+								<div class="reviews__info">
+									<cite class="reviews__name">Kelly Garcia</cite>
+									<img src="images/star.svg" width="8" height="15" alt="star">
+								</div>
+							</div>
+						</blockquote>
+					</li>
+					<li class="reviews__item">
+						<blockquote class="reviews__content">
+							<p class="reviews__text">“Feugiat hac porttitor sem dictum velit, elementum odio. Sed ipsum quis nec eget facilisis. Quis nibh ut bibendum nisl quis placerat proin tortor mattis in neque.”</p>
+							<div class="reviews__author">
+								<img class="reviews__img" src="images/user.png" width="49" height="49" alt="Kelly Genuine">
+								<div class="reviews__info">
+									<cite class="reviews__name">Kelly Garcia</cite>
+									<img src="images/star.svg" width="8" height="15" alt="star">
+								</div>
+							</div>
+						</blockquote>
+					</li>
+					<li class="reviews__item">
+						<blockquote class="reviews__content">
+							<p class="reviews__text">“Quis nibh ut bibendum nisl quis placerat proin tortor mattis in neque. Feugiat hac porttitor sem dictum velit, elementum odio sed eget facilisis.”</p>
+							<div class="reviews__author">
+								<img class="reviews__img" src="images/user.png" width="49" height="49" alt="Kelly Genuine">
+								<div class="reviews__info">
+									<cite class="reviews__name">Kelly Garcia</cite>
+									<img src="images/star.svg" width="8" height="15" alt="star">
+								</div>
+							</div>
+						</blockquote>
+					</li>
+					<li class="reviews__item">
+						<blockquote class="reviews__content">
+							<p class="reviews__text">“A pellen tesque pretium feugiat vel mobi sagittis lorem habi tasse cursus ipsum quis nec eget facilisis. Quis nibh ut bindum nisl quis placerat proin tortor mattis.”</p>
+							<div class="reviews__author">
+								<img class="reviews__img" src="images/user.png" width="49" height="49" alt="Kelly Genuine">
+								<div class="reviews__info">
+									<cite class="reviews__name">Kelly Garcia</cite>
+									<img src="images/star.svg" width="8" height="15" alt="star">
+								</div>
+							</div>
+						</blockquote>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="service">
+			<div class="container">
+				<div class="section__header">
+					<div class="section__subtitle">Our Services</div>
+					<h2 class="section__title">What we provide</h2>
+				</div>
+				<ul class="service__list">
+					<li class="service__column">
+						<div class="service__item">
+							<svg class="service__icon" width="80" height="80">
+							<use xlink:href="#service"></use>
+							</svg>
+							<h3 class="service__title">Roof replacement</h3>
+							<p class="service__text">Sagittis pulvinar ut dis venenatis nunc vitae aliquam vestibulum. Elit adipiscing massa diam.</p>
+							<a class="btn btn-service" href="#">read more</a>
+						</div>
+					</li>
+					<li class="service__column">
+						<div class="service__item">
+							<svg class="service__icon" width="80" height="80">
+							<use xlink:href="#service-2"></use>
+							</svg>
+							<h3 class="service__title">damage Repair</h3>
+							<p class="service__text">Vitae aliquam diam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.</p>
+							<a class="btn btn-service" href="#">read more</a>
+						</div>
+					</li>
+					<li class="service__column">
+						<div class="service__item">
+							<svg class="service__icon" width="80" height="80">
+							<use xlink:href="#service-3"></use>
+							</svg>
+							<h3 class="service__title">Roof repair</h3>
+							<p class="service__text">Pulvinar ut dis venenatis nunc vitae aliquam vestibulum. Elit adipiscing massa diamo.</p>
+							<a class="btn btn-service" href="#">read more</a>
+						</div>
+					</li>
+					<li class="service__column">
+						<div class="service__item">
+							<svg class="service__icon" width="80" height="80">
+							<use xlink:href="#service-4"></use>
+							</svg>
+							<h3 class="service__title">Roof Solar system</h3>
+							<p class="service__text">Nunc vitae aliquam vestibulum. Elit adipiscing massa diam in dignissim risus tellus libero.</p>
+							<a class="btn btn-service" href="#">read more</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container">
+				<div class="about__wrapper">
+					<img class="about__img" src="images/about.jpg" width="553" height="604" alt="about">
+					<div class="about__content">
+						<div class="about__subtitle">Who are we</div>
+						<h2 class="about__title">Best roofers since 2006</h2>
+						<p class="about__text">Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam vestibulum. Elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverra est. </p>
+						<p class="about__text">Venenatis nunc nunc vitae aliquam vestibulum. Elit adipiscing massa diam in dignissim. Risus tellus libero elementum aliquam etiam. Lectus adipiscing est auctor mi quisque nunc non viverr.</p>
+						<a class="btn btn-about" href="#">About us</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="projects">
+			<div class="container">
+				<div class="section__header section__header-left">
+					<div class="section__subtitle section__subtitle-fill">Our works</div>
+					<h2 class="section__title section__title-fill">Our latest projects</h2>
+				</div>
+				<ul class="projects__nav">
+					<li class="projects__item"><a href="#" class="projects__link" data-filter="all">all</a></li>
+					<li class="projects__item"><a href="#" class="projects__link" data-filter="roof">Roof repairs</a></li>
+					<li class="projects__item"><a href="#" class="projects__link" data-filter="Installation">Installation</a></li>
+					<li class="projects__item"><a href="#" class="projects__link" data-filter="solar">Solar</a></li>
+					<li class="projects__item"><a href="#" class="projects__link" data-filter="repairs">Damage repairs</a></li>
+				</ul>
+			</div>
+			<ul class="projects__list">
+					<li class="projects__items" data-cat="roof">
+						<article class="project">
+							<img class="project__img" src="images/projects1.jpg" width="384" height="456" alt="projects">
+							<div class="project__box">
+								<div class="project__info">
+									<data class="project__time" datetime="2023-03-03">Feb 3, 2023</data>
+									<h3 class="project__title">Expert Roofing Installation</h3>
+									<a class="btn btn-projecs" href="#">View project</a>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="projects__items" data-cat="Installation">
+						<article class="project">
+							<img class="project__img" src="images/projects2.jpg" width="384" height="456" alt="projects">
+							<div class="project__box">
+								<div class="project__info">
+									<data class="project__time" datetime="2023-03-03">Feb 3, 2023</data>
+									<h3 class="project__title">Expert Roofing Installation</h3>
+									<a class="btn btn-projecs" href="#">View project</a>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="projects__items" data-cat="solar">
+						<article class="project">
+							<img class="project__img" src="images/projects3.jpg" width="384" height="456" alt="projects">
+							<div class="project__box">
+								<div class="project__info">
+									<data class="project__time" datetime="2023-03-03">Feb 3, 2023</data>
+									<h3 class="project__title">Expert Roofing Installation</h3>
+									<a class="btn btn-projecs" href="#">View project</a>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="projects__items" data-cat="repairs">
+						<article class="project">
+							<img class="project__img" src="images/projects4.jpg" width="384" height="456" alt="projects">
+							<div class="project__box">
+								<div class="project__info">
+									<data class="project__time" datetime="2023-03-03">Feb 3, 2023</data>
+									<h3 class="project__title">Expert Roofing Installation</h3>
+									<a class="btn btn-projecs" href="#">View project</a>
+								</div>
+							</div>
+						</article>
+					</li>
+					<li class="projects__items" data-cat="solar">
+						<article class="project">
+							<img class="project__img" src="images/projects5.jpg" width="384" height="456" alt="projects">
+							<div class="project__box">
+								<div class="project__info">
+									<data class="project__time" datetime="2023-03-03">Feb 3, 2023</data>
+									<h3 class="project__title">Expert Roofing Installation</h3>
+									<a class="btn btn-projecs" href="#">View project</a>
+								</div>
+							</div>
+						</article>
+					</li>
+				</ul>
+		</section>
+
+		<div class="process">
+			<div class="container">
+				<ul class="process__list">
+					<li class="process__item process__item-1">
+						<img class="process__img" src="images/mdi_phone-outline.png" width="110" height="110" alt="mdi phone outline">
+						<h3 class="process__title">call or Fill form</h3>
+					</li>
+					<li class="process__item">
+						<img class="process__img" src="images/mdi_forum.png" width="110" height="110" alt="mdi forum">
+						<h3 class="process__title">Talk with us</h3>
+					</li>
+					<li class="process__item">
+						<img class="process__img" src="images/mdi_archive-search-outline.png" width="110" height="110" alt="mdi_archive search outline">
+						<h3 class="process__title">Inspect & prososal</h3>
+					</li>
+					<li class="process__item">
+						<img class="process__img" src="images/mdi_car-lifted-pickup.png" width="110" height="110" alt="mdi car lifted pickup">
+						<h3 class="process__title">Prep & installation</h3>
+					</li>
+					<li class="process__item">
+						<img class="process__img" src="images/mdi_shield-home-outline.png" width="110" height="110" alt="mdi shield home outline">
+						<h3 class="process__title">job site picked up</h3>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<section class="questions">
+			<div class="container">
+				<div class="section__header section__header-center">
+				    <div class="section__subtitle">Frequently asked questions</div>
+					<h2 class="section__title">We’ve got answers</h2>
+				</div>
+				<div class="questions__wrapper">
+					<div class="questions__box">
+						<button class="questions__accordion">Will you give us guarantee after roofing ?</button>
+	                    <div class="questions__panel">
+		                    <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt nam lectus nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a. Tristique ultricies consectetu at.</p>
+	                    </div>
+					</div>
+					<div class="questions__box">
+						<button class="questions__accordion">Is there any color options for my roofing ?</button>
+	                    <div class="questions__panel">
+		                    <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt nam lectus nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a. Tristique ultricies consectetu at.</p>
+	                    </div>
+					</div>
+					<div class="questions__box">
+						<button class="questions__accordion">What is the cost for just repairing ?</button>
+	                    <div class="questions__panel">
+		                    <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt nam lectus nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a. Tristique ultricies consectetu at.</p>
+	                    </div>
+					</div>
+					<div class="questions__box">
+						<button class="questions__accordion">What time will it take to finish my roofing ?</button>
+	                    <div class="questions__panel">
+		                    <p>Diam orci gravida convallis at enim risus viverra. Hac mi tristique in aliquet tincidunt nam lectus nec. Placerat interdum auctor facilisi massa laoreet hendrerit posuere a. Tristique ultricies consectetu at.</p>
+	                    </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="blog">
+			<div class="container">
+				<div class="blog__wrapper">
+					<div class="blog__content">
+						<div class="blog__subtitle">Our Articles</div>
+						<h2 class="blog__title">Latest blogs</h2>
+						<a class="btn btn-blog" href="#">Read Articles</a>
+					</div>
+					<ul class="blog__list">
+						<li class="blog__item">
+							<article class="news">
+								<img class="news__img" src="images/news.jpg" width="310" height="340" alt="news">
+								<div class="news__content">
+									<cite class="news__post">Posted by: Troopers</cite>
+									<h3 class="news__title">
+										<a class="news__link" href="#">How to take care of your roof</a>
+									</h3>
+									<p class="news__text">Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam vestibulum...</p>
+									<a class="btn btn-blog" href="#">read more</a>
+								</div>
+							</article>
+						</li>
+						<li class="blog__item">
+							<article class="news">
+								<img class="news__img" src="images/news2.jpg" width="310" height="340" alt="news">
+								<div class="news__content">
+									<cite class="news__post">Posted by: Troopers</cite>
+									<h3 class="news__title">
+										<a class="news__link" href="#">Best quality roofing company</a>
+									</h3>
+									<p class="news__text">Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam vestibulum. Elit adipi massa diam in dignissim...</p>
+									<a class="btn btn-blog" href="#">read more</a>
+								</div>
+							</article>
+						</li>
+						<li class="blog__item">
+							<article class="news">
+								<img class="news__img" src="images/news3.jpg" width="310" height="340" alt="news">
+								<div class="news__content">
+									<cite class="news__post">Posted by: Troopers</cite>
+									<h3 class="news__title">
+										<a class="news__link" href="#">For what years roof is stable</a>
+									</h3>
+									<p class="news__text">Pulvinar sagittis ut dis venenatis nunc nunc vitae aliquam vestibulum. Elit adipi massa diam in dignissim...</p>
+									<a class="btn btn-blog" href="#">read more</a>
+								</div>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="action">
+			<div class="container">
+				<div class="action__wrapper">
+					<div class="action__content">
+						<div class="section__subtitle section__subtitle-fill">Get started now</div>
+					    <h2 class="section__title section__title-fill">Get your roofing done</h2>
+					</div>
+					<a class="btn btn-action" href="#">Get in touch</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__top">
+					<div class="footer__col">
+						<a href="#" class="logo">
+							<img src="images/Roofers.svg" width="157" height="33" alt="Roofers">
+						</a>
+						<p class="footer__text">Elit adipi massa diam in dignissim. Sagittis pulvinar ut dis venenatis nunc nunc vitae aliquam vestibulum.</p>
+						<ul class="footer__social">
+							<li class="footer__sociial-item">
+								<a href="#" class="footer__social-link">
+									<img src="images/facebook.svg" width="18" height="18" alt="facebook">
+								</a>
+							</li>
+							<li class="footer__sociial-item">
+								<a href="#" class="footer__social-link">
+									<img src="images/instagram.svg" width="18" height="18" alt="instagram">
+								</a>
+							</li>
+							<li class="footer__sociial-item">
+								<a href="#" class="footer__social-link">
+									<img src="images/linkedin.svg" width="18" height="18" alt="linkedin">
+								</a>
+							</li>
+							<li class="footer__sociial-item">
+								<a href="#" class="footer__social-link">
+									<img src="images/twitter.svg" width="18" height="18" alt="twitter">
+								</a>
+							</li>
+							<li class="footer__sociial-item">
+								<a href="#" class="footer__social-link">
+									<img src="images/b.svg" width="18" height="18" alt="b">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h3 class="footer__title">Our services</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Roof replacement</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Damage repairs</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Damage repairs</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Roof Solar System</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Roof coating</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h3 class="footer__title">Quick links</h3>
+						<ul class="footer__list">
+							<li class="footer__item">
+								<a href="#" class="footer__link">Our locations</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">About us</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Our gallery</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Privacy Policy</a>
+							</li>
+							<li class="footer__item">
+								<a href="#" class="footer__link">Contact us</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__col">
+						<h3 class="footer__title">Contact Info</h3>
+						<ul class="footer__contact">
+							<li class="footer__contact-item">
+								<address>163 Elm Drive, NYC, USA</address>
+							</li>
+							<li class="footer__contact-item">
+								<a href="tel:+0892345166123" class="footer__contact-link">(+089) 234-516-6123</a>
+							</li>
+							<li class="footer__contact-item">
+								<a href="mailto:info@yourdomain.com" class="footer__contact-link">info@yourdomain.com</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<div class="container">
+					<div class="footer__info">© 2023 Roofers  -  All rights reserved</div>
+				</div>
+			</div>
+		</footer>
+
+	</main>
+	
+	<script src="libs/inputmask.min.js"></script>
+	<!-- <script defer src="libs/just-validate.min.js"></script> -->
+	<script src="libs/just-validate3.3.3.min.js"></script>
+	<!-- <script defer src="js/script.js"></script> -->
+	<script src="js/script-new.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+
+</body>
+</html>
